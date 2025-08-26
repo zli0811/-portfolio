@@ -1,2 +1,9 @@
-# -portfolio
-zli0811.github.io/portfolio
+# Data Scientist
+
+### Education
+
+### Research experience 
+- big impact project 1!
+- big impact project 2 !
+
+
