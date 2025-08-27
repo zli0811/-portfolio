@@ -6,7 +6,6 @@ I'm motivated by research that not only advances methodological development but 
 
 ## Interests & Passions
 
-- **Health AI**: Early detection of dementia and cancer  
 - **Medical Imaging**: MRI reconstruction  
 - **Statistical Modeling**: Statistial machine learning, data assimilation, 
 
