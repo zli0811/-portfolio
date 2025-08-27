@@ -29,8 +29,12 @@ I'm motivated by research that not only advances methodological development but 
 
 **Example Figures:**  
 
-- *Feature Importance of Neural Network*  
+- *Neural Network Architecture*  
   ![Feature Importance](/-portfolio/image/neural_network_structure.PNG)
+
+
+- *Feature Importance via Neural Network*  
+  ![Feature Importance](/-portfolio/image/feature_importance.PNG)
 
 ---
 
