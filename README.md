@@ -1,10 +1,13 @@
 # Data Scientist
 
-### Education
+### Interests & Passions
+### Education Background
+
 
 ### Research experience 
 - big impact project 1!
-- big impact project 2!
-- big impact project 3!
+### Application Areas of Interest
+### Skills/Technical Toolbox
+### Fugure Directions
 
 
