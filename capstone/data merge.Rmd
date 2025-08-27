@@ -1,0 +1,134 @@
+---
+title: "capstone"
+author: "Zi Li"
+output: html_document
+---
+
+#merge cognitive and phone tapping data
+
+```{r}
+setwd("C:/Users/Zi Li/Desktop")
+getwd()
+```
+
+```{r}
+cognitive_data <- read.csv("C:/Users/Zi Li/Desktop/df.zi.csv")   #cognitive scores 
+
+finger.tapping <- read.csv("C:/Users/Zi Li/Desktop/Compiled_Finger_Tapping_newest.csv")  #manual tapping scores 
+
+phone.tapping <- read.csv("C:/Users/Zi Li/Desktop/phone_tapping.csv")  #phone tapping scores of all studies
+
+```
+
+```{r}
+phone.tapping_non_384 <- subset(phone.tapping, study_id != 384)  #participants not in study 384
+```
+
+
+```{r}
+#number of common participants in the cognitive data and phone.tapping data (full)
+unique_cognitive <- unique(cognitive_data$unique_id)   #unique values of unique_id in cognitive 
+unique_phone_tapping <- unique(phone.tapping$unique_id) #unique values of unique_id in phone tapping
+length(unique_cognitive)
+length(unique_phone_tapping)
+length(intersect(unique_cognitive,unique_phone_tapping))  #number of common paticipants in the two data sets
+common_unique_ID <- intersect(unique_cognitive,unique_phone_tapping) #used for merging next steps 
+```
+
+```{r}
+#merge cognitive data and phone tapping data based on unique_id
+
+library(dplyr)
+
+# Subset both datasets based on the common unique_id
+cognitive_filtered <- cognitive_data[cognitive_data$unique_id %in% common_unique_ID,]
+phone_tapping_filtered <- phone.tapping[phone.tapping$unique_id %in% common_unique_ID,]
+
+length(unique(cognitive_filtered$unique_id))  #check if the subseted data has the same 272 participants above 
+length(unique(phone_tapping_filtered$unique_id))
+
+```
+
+```{r}
+cognitive_filtered <- cognitive_filtered[order(cognitive_filtered$unique_id),]
+phone_tapping_filtered <- phone_tapping_filtered[order(phone_tapping_filtered$unique_id),]
+```
+
+```{r}
+#choose wanted variables from the cognitive data
+cognitive_wanted <- cognitive_filtered[,c("unique_id","baseline_score.stroop","baseline_score.flanker",       "baseline_score.card","baseline_score.gonogo","baseline_score.episodic_memory","baseline_score.nback","pheno.diagnosis")]
+#cognitive_wanted <- na.omit(cognitive_wanted)  #remove missing values
+
+```
+
+```{r}
+#choose wanted variables from phone tapping data 
+phone_tapping_wanted <- phone_tapping_filtered[,c("unique_id","press_count_dom_ind_avg")]
+#remove missing values 
+#phone_tapping_wanted <- na.omit(phone_tapping_wanted)
+```
+
+```{r}
+common_unique_ID2 <- intersect(unique(cognitive_wanted$unique_id),unique(phone_tapping_wanted$unique_id))
+phone_tapping_wanted <- phone_tapping_wanted[phone_tapping_wanted$unique_id %in% common_unique_ID2,]
+phone_tapping_wanted<- phone_tapping_wanted[order(phone_tapping_wanted$unique_id),]
+```
+
+
+```{r}
+#keep the only first row of record for participants with multiple rows of record in phone tapping data
+library(dplyr)
+phone_tapping_wanted <- phone_tapping_wanted %>% distinct(unique_id, .keep_all = TRUE)
+
+```
+
+```{r}
+merge <- cognitive_wanted
+merge$press_count_dom_ind_avg <- phone_tapping_wanted$press_count_dom_ind_avg
+
+```
+
+```{r}
+merge <- merge[,-1] #remove column of patient ID
+rownames(merge) <- 1 : length(rownames(merge))
+merge <- na.omit(merge)
+merge <- merge[!grepl("Other,specify",merge$pheno.diagnosis),]
+merge <- merge[-c(34,40),] #remove unclear diagnosis of patients of other, specify
+
+```
+
+
+```{r}
+merge$pheno.diagnosis <- ifelse(merge$pheno.diagnosis == "Clinically normal","clinically normal","clinical abnormal")
+```
+
+
+```{r}
+write.csv(merge,"C:/Users/Zi Li/Desktop/merge.csv", row.names = FALSE)
+```
+
+
+
+
+```{r}
+Merged <- phone_tapping_filtered %>% left_join(cognitive_filtered)
+#View(phone_tapping_filtered %>% filter(unique_id==<unique_id>))
+```
+
+```{r}
+#View(phone_tapping_wanted %>% add_count(unique_id) %>% filter(n>1))
+#View(phone_tapping_filtered %>% filter(unique_id==“cab3688a”))
+#choose the row with the oldest record, for people with multiple records
+#phone_tapping_wanted.sparse <- phone_tapping_wanted %>% filter((unique_id==“cab3699a” & press_count_dom_ind_avg==94) | unique_id!=“cab3699a”)
+phone_tapping_wanted <- phone_tapping_filtered %>% select(unique_id, press_count_dom_ind_avg, press_count_non_dom_ind_avg) %>% distinct()
+phone_tapping_wanted <- na.omit(phone_tapping_wanted)
+```
+
+
+
+
+
+
+
+
+
