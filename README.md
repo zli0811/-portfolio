@@ -1,8 +1,7 @@
-# Zi Li
-
-**Health Data Science Graduate | Aspiring Researcher in Medical Imaging & Statistical Machine Learning**
-
----
+title: Zi Li
+description: Health Data Science Graduate, aspiring researcher in medical imaging and statistical maching learning
+show_downloads: false
+theme: jekyll-theme-minimal
 
 ## Interests & Passions
 Passionate about applying **machine learning and statistical modeling** to healthcare challenges.  
