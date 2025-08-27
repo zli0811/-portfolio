@@ -25,7 +25,7 @@ Current focus:
 ### Capstone Project – *A Preliminary Study of Applying Machine Learning Algorithms in Predicting Dementia*  
 - Conducted a comparative evaluation of **XGBoost, Random Forest, and multi-layer Neural Networks** for dementia prediction.  - Developed a **sum-of-weights method** to quantify feature importance for multi-layer neural network.  
 - Performed a systematic analysis using **cross-validated SHAP values** and **ROC curves** to assess model interpretability and predictive performance.
-- [🔗 GitHub Code](https://github.com/zli0811/-portfolio)  
+- [🔗 GitHub Code](https://github.com/zli0811/-portfolio/tree/main/capstone)  
 
 ---
 
