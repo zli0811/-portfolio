@@ -24,7 +24,13 @@ I'm motivated by research that not only advances methodological development but 
 - Conducted a comparative evaluation of **XGBoost, Random Forest, and Networks** for dementia prediction.
 - Developed a **sum-of-weights method** to quantify feature importance for multi-layer neural network.  
 - Performed a systematic analysis using **cross-validated SHAP values** and **ROC curves** to assess model interpretability and predictive performance.
-- [🔗 GitHub Code](https://github.com/zli0811/-portfolio)  
+- [🔗 GitHub Code](https://github.com/zli0811/-portfolio)
+
+
+**Example Figures:**  
+
+- *Feature Importance of Neural Network*  
+  ![Feature Importance](/-portfolio/image/neural_network_structure.PNG)
 
 ---
 
