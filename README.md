@@ -1,15 +1,10 @@
-# Zi Li
+# -portfolio
+# Data Scientist
 
-**Health Data Science Graduate | Aspiring Researcher in Medical Imaging & Statistical Machine Learning**
+### Education
 
----
-
-*Dedicated to developing machine learning and statistical methods for high-resolution MRI and early detection of dementia and cancer.*
-
----
-
-📧 Email: zi.li2@ucsf.edu
-💻 [GitHub](https://github.com/zli0811/-portfolio)  
+### Research experience 
+- big impact project 1!
 
 
 
