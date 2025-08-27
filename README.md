@@ -5,10 +5,9 @@ My academic journey has been shaped by a strong interest in combining **quantita
 I'm motivated by research that not only advances methodological development but also has the potential to bring tangible benefits to patients and clinicians. 
 
 ## Interests & Passions
-Passionate about applying **machine learning and statistical modeling** to healthcare challenges.  
-Current focus:  
+
 - **Health AI**: Early detection of dementia and cancer  
-- **Medical Imaging**: High-resolution MRI reconstruction  
+- **Medical Imaging**: MRI reconstruction  
 - **Statistical Modeling**: Statistial machine learning, data assimilation, 
 
 ---
@@ -23,7 +22,8 @@ Current focus:
 
 ## 🔬 Research Experience
 ### Capstone Project – *A Preliminary Study of Applying Machine Learning Algorithms in Predicting Dementia*  
-- Conducted a comparative evaluation of **XGBoost, Random Forest, and multi-layer Neural Networks** for dementia prediction.  - Developed a **sum-of-weights method** to quantify feature importance for multi-layer neural network.  
+- Conducted a comparative evaluation of **XGBoost, Random Forest, and Networks** for dementia prediction.
+- Developed a **sum-of-weights method** to quantify feature importance for multi-layer neural network.  
 - Performed a systematic analysis using **cross-validated SHAP values** and **ROC curves** to assess model interpretability and predictive performance.
 - [🔗 GitHub Code](https://github.com/zli0811/-portfolio/tree/main/capstone)  
 
@@ -38,7 +38,7 @@ Current focus:
 ## Future Directions
 I aim to pursue a **PhD in Biomedical Data Science / Computational Mathematics**, with research centered on the intersection of methodology and clinical application.  
 My focus areas include:  
-- Advancing **high-resolution MRI** techniques to enable early and accurate detection of neurodegenerative diseases and cancer.  
+- Reconstructing **high-resolution MRI** images to enable early and accurate detection of neurodegenerative diseases and cancer.  
 - Developing rigorous **mathematical methodologies for data assimilation**, bridging statistical theory with practical challenges in biomedical research.  
 
 ---
