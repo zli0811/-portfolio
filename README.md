@@ -1,61 +1,48 @@
-title: Zi Li
-description: Health Data Science Graduate, aspiring researcher in medical imaging and statistical maching learning
-show_downloads: false
-theme: jekyll-theme-minimal
+## About Me
+
+I'm Zi Li, a health data science graduate with a background in applied and computational mathematics. 
+My academic journey has been shaped by a strong interest in combining **quantitative rigor** and **real-world medical applications**. Through my training, I have developed experience in **Statistical modeling, machine learning, and biomedical data analysis**.
+I'm motivated by research that not only advances methodological development but also has the potential to bring tangible benefits to patients and clinicians. 
 
 ## Interests & Passions
 Passionate about applying **machine learning and statistical modeling** to healthcare challenges.  
 Current focus:  
-- Early detection of dementia and cancer  
-- High-resolution MRI reconstruction  
-- Neural network structure optimization and feature importance methods  
+- **Health AI**: Early detection of dementia and cancer  
+- **Medical Imaging**: High-resolution MRI reconstruction  
+- **Statistical Modeling**: Statistial machine learning, data assimilation, 
 
 ---
 
 ## 🎓 Education Background
 - **M.S. in Health Data Science**, University of California, San Francisco  
-  - Thesis: *Bayesian Reconstruction of MRI for Early Disease Detection*  
-- **B.S. in Applied & Computational Mathematics**, [Your University]  
-  - Relevant coursework: Machine Learning, Statistical Inference, Medical Imaging  
+  - Capstone: *A Preliminary Study of Applying Maching Learning Algorithms in Predicting Dementia*  
+- **B.S. in Applied & Computational Mathematics**, Colorado School of Mines  
+  - Relevant coursework: Mathematical Statistics, Statistical Inference, ODE & Dynamic Systems, Partial Differential Equations
 
 ---
 
 ## 🔬 Research Experience
-### Capstone Project – *Predicting Dementia Using Machine Learning*  
-- Compared **XGBoost, Random Forest, and Neural Networks** for dementia prediction  
-- Developed **feature importance visualization** and applied **cross-validated SHAP**  
-- Conducted **ROC curve and cumulative AUC analysis** with feature selection  
+### Capstone Project – *A Preliminary Study of Applying Machine Learning Algorithms in Predicting Dementia*  
+- Conducted a comparative evaluation of **XGBoost, Random Forest, and multi-layer Neural Networks** for dementia prediction.  - Developed a **sum-of-weights method** to quantify feature importance for multi-layer neural network.  
+- Performed a systematic analysis using **cross-validated SHAP values** and **ROC curves** to assess model interpretability and predictive performance.
 - [🔗 GitHub Code](https://github.com/zli0811/-portfolio)  
-
-*(Add more projects here, e.g. MRI-based studies, internships, collaborations)*
-
----
-
-## Application Areas of Interest
-- **Medical Imaging**: MRI, CT, diffusion MRI  
-- **Healthcare AI**: Early disease detection, treatment response evaluation  
-- **Statistical Modeling**: Bayesian methods, data assimilation, feature selection  
 
 ---
 
 ## Skills / Technical Toolbox
 - **Programming**: R, Python, MATLAB  
-- **Machine Learning**: XGBoost, Random Forest, Neural Networks, SHAP, Bayesian methods  
-- **Tools**: Git, GitHub, RStudio, Jupyter, TensorFlow/Keras, scikit-learn  
-- **Other**: Data visualization, clinical data preprocessing, statistical modeling  
+- **Other**: Data visualization, statistical modeling  
 
 ---
 
 ## Future Directions
-I aim to pursue a **PhD in biomedical data science / computational science**, focusing on:  
-- Developing principled methods for **machine learning in small-sample clinical data**  
-- Advancing **high-resolution MRI** for early detection of neurodegenerative diseases and cancer  
-- Bridging the gap between **imaging theory, clinical translation, and health policy**  
+I aim to pursue a **PhD in Biomedical Data Science / Computational Mathematics**, with research centered on the intersection of methodology and clinical application.  
+My focus areas include:  
+- Advancing **high-resolution MRI** techniques to enable early and accurate detection of neurodegenerative diseases and cancer.  
+- Developing rigorous **mathematical methodologies for data assimilation**, bridging statistical theory with practical challenges in biomedical research.  
 
 ---
 
-📧 Email: your_email@example.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile)  
+📧 Email: zi.li2@ucsf.edu
 💻 [GitHub](https://github.com/zli0811)  
-📄 [CV/Resume](https://yourcvlink.com)  
 
