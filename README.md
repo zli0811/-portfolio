@@ -6,8 +6,8 @@ I'm motivated by research that not only advances methodological development but 
 
 ## Interests & Passions
 
-- **Medical Imaging**: MRI reconstruction  
-- **Statistical Modeling**: Statistial machine learning, data assimilation, 
+- **medical imaging**: MRI reconstruction  
+- **statistical modeling**: Statistial machine learning, data assimilation, 
 
 ---
 
